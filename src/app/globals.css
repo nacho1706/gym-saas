@@ -74,3 +74,23 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 60s linear infinite; /* Duración total de la animación para pantallas grandes */
+  }
+  
+  @media (max-width: 768px) {
+    .animate-scroll {
+      animation-duration: 10s; /* Reducir la duración para pantallas pequeñas */
+      animation-timing-function: linear; /* Ajustar la función de timing para mantener la velocidad */
+    }
+  }
