@@ -52,6 +52,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        fontFamily: {
+          anton: 'var(--font-anton)',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

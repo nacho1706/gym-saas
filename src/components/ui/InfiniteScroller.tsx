@@ -12,7 +12,7 @@ const InfiniteScroll = () => {
   const repeatedSports = [...sports, ...sports, ...sports]; // Duplicate the array to create continuous effect
 
   return (
-    <div className="overflow-hidden whitespace-nowrap">
+    <div className="overflow-hidden whitespace-nowrap relative z-10">
       <div className="flex animate-scroll space-x-10">
         {repeatedSports.map((sport, index) => (
           <div key={index} className="flex items-center">
@@ -30,4 +30,3 @@ const InfiniteScroll = () => {
 };
 
 export default InfiniteScroll;
-
