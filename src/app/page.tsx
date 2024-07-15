@@ -2,7 +2,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import BackgroundImage from "@/components/ui/BackgroundImage";
 import { Button } from "@/components/ui/button";
 import InfiniteScroll from "@/components/ui/InfiniteScroller";
-import ProgramImage from "@/components/ui/ProgramImage";
 
 export default function Home() {
   return (
@@ -50,24 +49,49 @@ export default function Home() {
       </section>
       <section className="relative pt-16">
         <BackgroundImage backgroundImage="url('/fondo_negro.webp')" />
-          <div className="md:flex justify-center md:col-start-2">
-            <h1 className="relative w-fit tracking-wider max-sm:tracking-wide text-balance mt-10 font-bold !leading-tight text-white text-4xl md:text-6xl lg:text-7xl lg:text-center font-bebas">
-              MEET OUR PROGRAMS
-            </h1>
-          </div>
+        <div className="md:flex justify-center md:col-start-2">
+          <h1 className="relative w-fit tracking-wider max-sm:tracking-wide text-balance mt-10 font-bold !leading-tight text-white text-4xl md:text-6xl lg:text-7xl lg:text-center font-bebas">
+            MEET OUR PROGRAMS
+          </h1>
+        </div>
         <div className="h-auto grid md:grid-cols-3 sm:grid-rows-2 gap-0 max-sm:gap-12 z-10 md:py-12">
-          <div className="md:col-start-2 relative h-160">
-            <ProgramImage ImageUrl="/hole-crack.webp"/>
+          <div className="md:col-start-1 relative h-160 md:mt-44">
             <div className="flex justify-around align-center">
-            <h2 className="text-white text-center text-5xl pt-8 font-bebas tracking-wider">
-              BODY BUILDING
-            </h2>
-            <Button
-              variant="ghost"
-              className="h-8 mt-8 p-6 bg-transparent border border-x-white text-white max-sm:p-5"
-            >
-              More information
-            </Button>
+              <h2 className="text-white text-center text-5xl pt-8 font-bebas tracking-wider">
+                CALISTHENICS
+              </h2>
+              <Button
+                variant="ghost"
+                className="h-8 mt-8 p-6 bg-transparent border border-x-white text-white max-sm:p-5"
+              >
+                More information
+              </Button>
+            </div>
+          </div>
+          <div className="md:col-start-2 relative h-160">
+            <div className="flex justify-around align-center">
+              <h2 className="text-white text-center text-5xl pt-8 font-bebas tracking-wider">
+                BODY BUILDING
+              </h2>
+              <Button
+                variant="ghost"
+                className="h-8 mt-8 p-6 bg-transparent border border-x-white text-white max-sm:p-5"
+              >
+                More information
+              </Button>
+            </div>
+          </div>
+          <div className="md:col-start-3 relative h-160 md:mt-44">
+            <div className="flex justify-around align-center">
+              <h2 className="text-white text-center text-5xl pt-8 font-bebas tracking-wider">
+                BODY BUILDING
+              </h2>
+              <Button
+                variant="ghost"
+                className="h-8 mt-8 p-6 bg-transparent border border-x-white text-white max-sm:p-5"
+              >
+                More information
+              </Button>
             </div>
           </div>
         </div>
