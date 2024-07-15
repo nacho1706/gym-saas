@@ -1,7 +1,7 @@
 const BackgroundImage = ({ backgroundImage }: { backgroundImage: string }) => {
     return (
       <div
-        className="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat -z-20"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center-z-20"
         style={{ backgroundImage: `${backgroundImage}` }}
       ></div>
     );

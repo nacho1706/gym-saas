@@ -2,39 +2,40 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import BackgroundImage from "@/components/ui/BackgroundImage";
 import { Button } from "@/components/ui/button";
 
-
 export default function Home() {
   return (
     <div>
-      <section className="relative">
+      <section className="relative h-screen w-full">
         <BackgroundImage backgroundImage="url('/fondo-landing.png')" />
-        <div className="absolute inset-0"></div>
-        <MaxWidthWrapper className="relative pb-28 pt-10 sm:pb-32 lg:gap-x-0 lg:pb-80 xl:gap-x-8 xl:pt-28 z-10">
+        <MaxWidthWrapper className="relative pb-28 pt-10 sm:pb-32 lg:gap-x-0 lg:pb-96 xl:gap-x-8 xl:pt-14 z-10">
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
-            <div className="relative mx-auto text-center lg:text-left flex flex-col items-center">
-              <h1 className="relative w-fit max-sm:tracking-wide text-pretty text-center mt-10 font-bold !leading-tight text-4xl md:text-6xl lg:text-8xl lg:text-clip font-sans">
-              Tu Pedido en <span className="text-white bg-green-500">WhatsApp</span>: Rápido, Fácil y Económico
+            <div className="relative mx-auto lg:text-left flex flex-col items-center">
+              <h1 className="relative w-fit max-sm:tracking-wide text-pretty text-center mt-10 font-bold !leading-tight text-4xl md:text-6xl lg:text-7xl lg:text-clip font-sans">
+                Tu Pedido en{" "}
+                <span className="text-white bg-green-500">WhatsApp</span>:
+                Rápido, Fácil y Económico
               </h1>
-              <p className="mt-4 text-xs lg:text-sm lg:pr-10 max-w-prose lg:text-center text-justify">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis at consequuntur ea, illum voluptatem eos magnam tempora
-                porro, veritatis totam nihil voluptate laborum consectetur
-                molestias sequi quae,
+              <p className="mt-4 text-md lg:text-pretty lg:pr-10 max-w-prose text-center max-sm:text-sm max-sm:my-10">
+                Transforma la experiencia de tus clientes con nuestro innovador
+                servicio de menú online para restaurantes. Por un precio
+                accesible, ofrecemos una solución que facilita la gestión de
+                pedidos de manera eficiente y moderna.
               </p>
-              <section className="sm:flex flex-auto mt-7">
-                <div className="sm:pr-7 max-sm:my-3">
-                  <Button variant="destructive" className="p-6 max-sm:p-6">
-                    BOOK A CLASS
+              <section className="sm:flex flex-auto justify-center mt-7">
+                <div className="max-sm:my-1">
+                  <Button variant="default" className="p-6 max-sm:p-5 bg-orange-500 text-white">
+                    MAS INFORMACION
                   </Button>
                 </div>
-                <div className="max-sm:p-3">
+                <div className="md:ml-10">
                   <Button
                     variant="ghost"
-                    className="h-8 p-6 bg-transparent border border-x-white text-white max-sm:p-5"
+                    className="h-8 p-6 border-x-white text-white bg-orange-700 max-sm:p-5"
                   >
-                    BROWSE ALL CLASSES
+                    
+                    CONTACTO
                   </Button>
-                </div>
+                  </div>
               </section>
             </div>
           </div>

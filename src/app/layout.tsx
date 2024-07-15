@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import NavbarC from "@/components/NavbarC";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,11 +11,10 @@ export const metadata: Metadata = {
 };
 
 const bebas_neue = Bebas_Neue({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--bebas-neue-font',
-})
-
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--bebas-neue-font",
+});
 
 export default function RootLayout({
   children,
@@ -23,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={bebas_neue.variable}>
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className}`}>
+        <NavbarC />
+        {children}
+      </body>
     </html>
   );
 }
