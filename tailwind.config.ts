@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -19,9 +19,9 @@ const config: Config = {
     },
     extend: {
       height: {
-        '128' : '32rem', //Custom height
-        '144' : '36rem',
-        '160' : '40rem',
+        "128": "32rem", //Custom height
+        "144": "36rem",
+        "160": "40rem",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -57,9 +57,22 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "light-wisteria": {
+          50: "#FCFAFD",
+          100: "#F0E1F4",
+          200: "#E3C9EA",
+          300: "#D6B0E1",
+          400: "#C294CE",
+          500: "#A981B4",
+          600: "#916F9A",
+          700: "#785C80",
+          800: "#604966",
+          900: "#47374C",
+          950: "#2F2432",
+        },
       },
       fontFamily: {
-        bebas: ['var(--bebas-neue-font)', 'sans-serif'], 
+        bebas: ["var(--bebas-neue-font)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

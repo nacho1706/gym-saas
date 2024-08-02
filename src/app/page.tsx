@@ -1,19 +1,22 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import BackgroundImage from "@/components/ui/BackgroundImage";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
       <section className="relative h-screen w-full">
         <BackgroundImage backgroundImage="url('/fondo-landing.png')" />
-        <MaxWidthWrapper className="relative pb-28 pt-10 sm:pb-32 lg:gap-x-0 lg:pb-96 xl:gap-x-8 xl:pt-14 z-10">
+        <MaxWidthWrapper className="relative pb-28 pt-10 sm:pb-32 lg:gap-x-0 lg:pb-96 xl:gap-x-8 xl:pt-14 z-10 ">
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto lg:text-left flex flex-col items-center">
               <h1 className="relative w-fit max-sm:tracking-wide text-pretty text-center mt-10 font-bold !leading-tight text-4xl md:text-6xl lg:text-7xl lg:text-clip font-sans">
                 Tu Pedido en{" "}
-                <span className="text-white bg-green-500">WhatsApp</span>:
-                Rápido, Fácil y Económico
+                <span className="text-white bg-light-wisteria-700 p-1">
+                  WhatsApp
+                </span>
+                : Rápido, Fácil y Económico
               </h1>
               <p className="mt-4 text-md lg:text-pretty lg:pr-10 max-w-prose text-center max-sm:text-sm max-sm:my-10">
                 Transforma la experiencia de tus clientes con nuestro innovador
@@ -23,7 +26,10 @@ export default function Home() {
               </p>
               <section className="sm:flex flex-auto justify-center mt-7">
                 <div className="max-sm:my-1">
-                  <Button variant="default" className="p-6 max-sm:p-5 bg-orange-500 text-white">
+                  <Button
+                    variant="default"
+                    className="p-6 max-sm:p-5 bg-orange-500 text-white"
+                  >
                     MAS INFORMACION
                   </Button>
                 </div>
@@ -32,11 +38,30 @@ export default function Home() {
                     variant="ghost"
                     className="h-8 p-6 border-x-white text-white bg-orange-700 max-sm:p-5"
                   >
-                    
                     CONTACTO
                   </Button>
-                  </div>
+                </div>
               </section>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 grid-rows-1 gap-3 h-screen mt-10">
+            <div className="relative w-full h-128">
+              <Image
+                src="/phone_2.jpg"
+                alt="Descripción de la imagen"
+                layout="fill"
+                objectFit="fill"
+                className="rounded-lg"
+              />
+            </div>
+            <div className="relative w-full h-128">
+              <Image
+                src="/phone_1.avif"
+                alt="Descripción de la imagen"
+                layout="fill"
+                objectFit="fill"
+                className="rounded-lg"
+              />
             </div>
           </div>
         </MaxWidthWrapper>
